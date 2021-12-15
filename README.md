@@ -28,7 +28,7 @@ The purpose of this repository is to provide a starter template for a NodeJS app
 * [Jest](https://jestjs.io/) for unit tests
 * NPM scripts for builds, linting, tests & starting
 * Visual Studio Code starter launch.json file with debugging
-* [WebPack](https://webpack.js.org/) for builds
+* [Gulp](https://gulpjs.com/) for builds
 * Configuration using [nconf](https://github.com/indexzero/nconf#readme)
   * Application arguments
   * Environment variables

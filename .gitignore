@@ -42,3 +42,7 @@ config.prod.json
 
 # Misc
 .DS_Store
+
+out/
+
+data/

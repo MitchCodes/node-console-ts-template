@@ -17,6 +17,7 @@
     "noImplicitThis": false,
     "strictNullChecks": false,
     "declaration": false,
+    "outDir": "build/"
   },
   "include": [
     "src/**/*"

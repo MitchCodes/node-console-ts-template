@@ -1,21 +1,11 @@
-FROM node:14.16
-
-
-###################################################
-#### Fix Debian Layer
-###################################################
-
-RUN printf "deb http://archive.debian.org/debian/ jessie main\ndeb-src http://archive.debian.org/debian/ jessie main\ndeb http://security.debian.org jessie/updates main\ndeb-src http://security.debian.org jessie/updates main" > /etc/apt/sources.list
-
-
+FROM node:16.6
 
 ###################################################
 #### Dependency packages layer
 ###################################################
 
 
-RUN su -c 'apt-get update' && su -c 'apt-get install --force-yes -y sudo'
-
+RUN su -c 'apt-get update' && su -c 'apt-get install --force-yes -y sudo' && su -c 'apt-get install --force-yes -y build-essential'
 
 
 
@@ -38,6 +28,5 @@ RUN sudo npm run build-prod
 
 # Any ports to expose
 # EXPOSE 43218:43218
-
 
 CMD [ "npm", "run-script", "start" ]
